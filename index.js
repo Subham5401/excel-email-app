@@ -1,8 +1,9 @@
+require('dotenv').config();
 const excelJs = require('exceljs');
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
-  service: 'outlook',
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL,
     pass: process.env.EMAIL_PASSWORD,
