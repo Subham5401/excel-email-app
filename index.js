@@ -4,8 +4,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'outlook',
   auth: {
-    user: '',
-    pass: '',
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
@@ -30,7 +30,7 @@ const sendEmailsFromExcel = async () => {
       const bodyWithSign = `${body}\n\n${emailSign}`;
 
       const mailOptions = {
-        from: '',
+        from: process.env.EMAIL,
         to: email,
         subject: subject,
         text: bodyWithSign,
