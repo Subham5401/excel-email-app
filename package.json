@@ -1,0 +1,15 @@
+{
+  "name": "excel-email-app",
+  "version": "1.0.0",
+  "description": "It extracts email body and email address from an excel file and send it to corresponding recipients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Subham Mishra",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "nodemailer": "^6.9.16"
+  }
+}
