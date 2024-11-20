@@ -1,6 +1,6 @@
 # Excel Email App
 
-This application extracts email bodies and email addresses from an Excel file and sends them to the corresponding recipients.
+This application extracts email subjects, bodies and email addresses from an Excel file and sends them to the corresponding recipients.
 
 ## Installation Instructions
 
