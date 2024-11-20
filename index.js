@@ -17,7 +17,7 @@ const emailSign = `
 const sendEmailsFromExcel = async () => {
   const workbook = new excelJs.Workbook();
 
-  await workbook.xlsx.readFile('');
+  await workbook.xlsx.readFile(`file/${process.env.FILE_NAME}`);
 
   const worksheet = workbook.getWorksheet(1);
 
